@@ -44,10 +44,8 @@ SQLite: banco de dados relacional.
 
 
 
-HOME 
+ 
 <img width="388" height="846" alt="image" src="https://github.com/user-attachments/assets/dc4db78f-a968-4484-8adf-7e1483190644" />
-
-NOVA TAREFA
 <img width="379" height="836" alt="image" src="https://github.com/user-attachments/assets/6ff37396-40d6-4b39-a836-f862ce40a98c" />
 
 
