@@ -1,58 +1,56 @@
-# TaskFlow — Gerenciador de tarefas com SQLite
+TaskFlow — Gerenciador de Tarefas
 
-Aplicativo React Native + Expo para cadastrar, consultar, editar, concluir e excluir tarefas. Os dados são persistidos em SQLite no próprio dispositivo.
+Sobre o projeto
 
-## Requisitos
-- Node.js LTS
-- Expo Go compatível com a versão do Expo usada pelo projeto ou emulador Android
-- Conexão com a internet para instalar dependências
+O TaskFlow é um aplicativo de gerenciamento de tarefas desenvolvido com React Native e Expo. Seu objetivo é ajudar os usuários a organizar suas atividades, acompanhar o andamento das tarefas e gerenciar suas prioridades de forma simples e prática.
 
-## Como executar
-1. Extraia o ZIP.
-2. Abra a pasta `TaskFlow-SQLite` no VS Code.
-3. No terminal, execute:
-   ```bash
-   npm install
-   npx expo install expo-sqlite
-   npx expo start
-   ```
-   O comando `expo install` seleciona a versão de `expo-sqlite` compatível com o SDK do projeto. Se ele atualizar o `package.json`, mantenha a versão selecionada pelo Expo.
-4. Leia o QR Code pelo Expo Go ou pressione `a` para abrir no emulador Android.
+O aplicativo utiliza o banco de dados SQLite para armazenar as tarefas localmente no dispositivo.
 
-Se o Expo Go instalado no celular não for compatível com o SDK do projeto, atualize o Expo Go ou crie um development build compatível.
+Funcionalidades
 
-## Estrutura principal
-- `App.js`: interface, filtros, validação visual e ações do usuário.
-- `src/models/Task.js`: classe de domínio, encapsula validações e conversão dos dados.
-- `src/database/database.js`: abre/cria o banco `taskflow.db` e a tabela `tasks`.
-- `src/services/TaskRepository.js`: operações CRUD e consultas SQL com filtros e ordenação.
-- `src/styles/colors.js`: paleta visual.
+Cadastro de novas tarefas.
 
-## Requisitos demonstrados
-- CRUD: criar, listar, atualizar, concluir/reabrir e excluir.
-- SQLite: banco local e tabela criados automaticamente.
-- Validação: título, descrição, categoria e prioridade.
-- SQL: busca por título/descrição/categoria, filtro de status e ordenação.
-- Tratamento de erros: `try/catch`, mensagens no formulário e alertas.
-- POO: classe `Task`, objetos e classe `TaskRepository`.
-- Persistência: feche e reabra o app; as tarefas continuam no banco local.
+Edição de tarefas existentes.
 
-## Roteiro de evidências para a entrega
-1. Tela inicial sem tarefas.
-2. Cadastro de uma tarefa preenchida.
-3. Tentativa de salvar com campos obrigatórios vazios e mensagem de validação.
-4. Lista com tarefas e prioridades.
-5. Filtro de pendentes/concluídas e busca.
-6. Edição e exclusão de tarefa.
-7. Tarefa marcada como concluída.
-8. Fechar e reabrir o app para demonstrar a persistência.
+Exclusão de tarefas.
 
-## Como explicar na apresentação
-- A classe `Task` representa a tarefa e valida os dados.
-- `TaskRepository` separa as regras de acesso ao banco da interface.
-- SQLite guarda os registros no arquivo local `taskflow.db`.
-- As consultas usam parâmetros `?`, reduzindo riscos de SQL injection.
-- A lista é recarregada após cada operação para refletir o banco.
+Marcação de tarefas como concluídas ou pendentes.
 
-## Observação
-O projeto usa SQLite local e não inclui integração com serviço em nuvem, pois esta primeira entrega tem foco no banco embarcado. A integração em nuvem pode ser adicionada numa etapa posterior, se for exigida na segunda atividade.
+Organização por categorias.
+
+Definição de prioridades.
+
+Pesquisa de tarefas.
+
+Filtragem por status.
+
+Ordenação das tarefas.
+
+Armazenamento local com SQLite.
+
+Tela de login, caso esteja habilitada na versão utilizada.
+
+Tecnologias utilizadas
+
+React Native: desenvolvimento da interface mobile.
+
+Expo: execução e gerenciamento do aplicativo.
+
+JavaScript: linguagem de programação.
+
+expo-sqlite: armazenamento local dos dados.
+
+SQLite: banco de dados relacional.
+
+
+
+HOME 
+<img width="388" height="846" alt="image" src="https://github.com/user-attachments/assets/dc4db78f-a968-4484-8adf-7e1483190644" />
+
+NOVA TAREFA
+<img width="379" height="836" alt="image" src="https://github.com/user-attachments/assets/6ff37396-40d6-4b39-a836-f862ce40a98c" />
+
+
+
+
+
